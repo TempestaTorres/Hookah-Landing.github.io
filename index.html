@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hookah Bar</title>
+    <link rel="stylesheet" href="./dist/css/app.min.css" />
+    <script src="./scripts/vendor.js"></script>
+    <script src="./scripts/app.min.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container flex align-space-between">
+        <!--   Logo  -->
+        <div class="logo flex">
+          <a href="#" class="flex">
+            <img src="./dist/assets/img/hookah.png" alt="hookah logo" />
+          </a>
+          <div class="logo-content">
+            <div class="logo-title h4">Smoke City</div>
+            <p class="logo-name">hookah bar</p>
+          </div>
+        </div>
+        <!--   Navigation Bar  -->
+        <nav class="nav">
+          <ul class="nav-list flex align-center">
+            <li class="fa-item cursor-pointer m-b d-none" id="li-close">
+              <i class="fa fa-window-close"></i>
+            </li>
+            <li class="list-item hvr-fade">
+              <a href="#aboutus">О нас</a>
+            </li>
+            <li class="list-item hvr-fade">
+              <a href="#menu">Меню</a>
+            </li>
+            <li class="list-item hvr-fade">
+              <a href="#gallery">Галерея</a>
+            </li>
+            <li class="list-item hvr-fade">
+              <a href="#contacts">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <!--   Info  -->
+        <div class="info flex">
+          <div class="info-card">
+            <div class="info-card__img flex">
+              <img src="../dist/assets/img/clock.png" alt="" />
+            </div>
+            <div class="info-card__content">
+              <p class="info-text">Пн-Чт с 18 до 00</p>
+              <p class="info-text">Пт-Сб с 20 до 5</p>
+            </div>
+          </div>
+          <div class="info-card">
+            <div class="info-card__img flex">
+              <img src="./dist/assets/img/phone-call.png" alt="" />
+            </div>
+            <div class="info-card__content">
+              <p class="info-text color-blue">8 900-500-10-10</p>
+              <p class="info-text color-light">Звоните нам</p>
+            </div>
+          </div>
+        </div>
+        <!--  Burger  -->
+        <div class="hamburger" id="burger">
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="main-section container flex align-space-between">
+        <!-- Main Card -->
+        <div class="main-card perspective-card flex-col">
+          <div class="card-caption">
+            <h1 class="h1">С нами вы почувствуете дымный вкус жизни!</h1>
+          </div>
+          <div class="card-body">
+            <p class="plain-text">
+              Только качественный табак и лучшее обслуживание. Мы создаем тренды
+              в кальянных тусовках и у нас каждый сможет почувствовать себя
+              важным гостем и неотъемлемой частью заведения.
+            </p>
+          </div>
+          <div class="card-footer">
+            <a href="#form" class="btn hvr-shutter-in-vertical"
+              >Забронировать стол</a
+            >
+          </div>
+        </div>
+        <!-- Main Image -->
+        <div class="img-container">
+          <img src="./dist/assets/img/hookah-bg.png" alt="hookah" />
+          <div class="discount-logo flex align-center">
+            <p class="extra-text">Новым гостям 15<code>%</code> скидки !</p>
+          </div>
+        </div>
+      </section>
+      <section class="assortment-section container flex flex-gap">
+        <div class="flex-col flex-gap">
+          <div class="basic-card p-md w-lg border flex">
+            <div class="basic-card-img img-container">
+              <img src="./dist/assets/img/tobacco.png" alt="tobacco" />
+            </div>
+            <div class="basic-card-content flex-col">
+              <div class="basic-card-caption">
+                <h3 class="h3">Лучшие вкусы табака</h3>
+              </div>
+              <div class="basic-card-body m-t">
+                <p class="plain-text">
+                  В нашем ассортименте представлены как эталонные бренды и
+                  вкусы, так и самые актуальные и крафтовые новинки со всего
+                  мира.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="basic-card basic-card-rev p-md w-lg border flex">
+            <div class="basic-card-img img-container">
+              <img src="./dist/assets/img/vip.png" alt="vip" />
+            </div>
+            <div class="basic-card-content flex-col">
+              <div class="basic-card-caption">
+                <h3 class="h3">Отдельные VIP-комнаты</h3>
+              </div>
+              <div class="basic-card-body m-t">
+                <p class="plain-text">
+                  Для больших компаний есть комфортныеVIP-комнаты, где каждый
+                  сможет отметить свой праздник или просто хорошо отдохнуть.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="inner-col flex-col space-between">
+          <div class="basic-card basic-card-rev p-md border flex-col">
+            <div class="basic-card-img img-container">
+              <img src="./dist/assets/img/disco.png" alt="vip" />
+            </div>
+            <div class="basic-card-content flex-col">
+              <div class="basic-card-caption">
+                <h3 class="h3">Дискотеки каждую субботу</h3>
+              </div>
+              <div class="basic-card-body m-t">
+                <p class="plain-text">
+                  По субботам спокойствие и размеренность уходят на второй план,
+                  ведь начиная с 20:00 за пульты встают наши диджеи и начинаются
+                  веселые танцы.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="flex-col">
+            <div class="basic-card-content flex-col">
+              <div class="basic-card-caption">
+                <h3 class="h3">А еще...</h3>
+              </div>
+              <div class="basic-card-body m-t">
+                <p class="plain-text">
+                  Элитные сорта чая, авторские коктейли и лучшие настольные и
+                  видео-игры.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="aboutus-section container overflow-hidden" id="aboutus">
+        <div class="slide-right">
+          <h2 class="h2">Наши мастера</h2>
+          <div class="about-description">
+            <p class="plain-text">
+              Наши кальянщики виртуозно соорудят ароматную забивку, чтобы вы
+              получили максимальное удовольствие от курения.
+            </p>
+          </div>
+        </div>
+        <!--  Slider -->
+        <div class="slider">
+          <div class="slider-container flex md-gap" data-width="350">
+            <!--  Slides -->
+            <div class="slider-card w-sm" id="slide-1">
+              <div class="slider-card-img"></div>
+              <div class="slider-card-body p-md flex-col border">
+                <div class="basic-card-caption">
+                  <h4 class="h4">Максим, 22 года</h4>
+                </div>
+                <div class="time">
+                  <p class="sub-text">Стаж работы: 2 года</p>
+                </div>
+                <div class="slide-card-content">
+                  <p class="plain-text">
+                    Забивает самые необычные вкусы в ваш кальян.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="slider-card w-sm" id="slide-2">
+              <div class="slider-card-img"></div>
+              <div class="slider-card-body p-md flex-col border">
+                <div class="basic-card-caption">
+                  <h4 class="h4">Андрей, 19 лет</h4>
+                </div>
+                <div class="time">
+                  <p class="sub-text">Стаж работы: 8 месяцев</p>
+                </div>
+                <div class="slide-card-content">
+                  <p class="plain-text">
+                    Профессионально сыграет с вами в видео-игры во время
+                    перерыва :)
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="slider-card w-sm" id="slide-3">
+              <div class="slider-card-img"></div>
+              <div class="slider-card-body p-md flex-col border">
+                <div class="basic-card-caption">
+                  <h4 class="h4">Савелий, 21 год</h4>
+                </div>
+                <div class="time">
+                  <p class="sub-text">Стаж работы: 1,5 года</p>
+                </div>
+                <div class="slide-card-content">
+                  <p class="plain-text">
+                    Мастер оригинальных коктейлей и лучше всех заваривает чай!
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="slider-card w-sm" id="slide-4">
+              <div class="slider-card-img"></div>
+              <div class="slider-card-body p-md flex-col border">
+                <div class="basic-card-caption">
+                  <h4 class="h4">Максим, 22 года</h4>
+                </div>
+                <div class="time">
+                  <p class="sub-text">Стаж работы: 2 года</p>
+                </div>
+                <div class="slide-card-content">
+                  <p class="plain-text">
+                    Забивает самые необычные вкусы в ваш кальян.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="slider-card w-sm" id="slide-5">
+              <div class="slider-card-img"></div>
+              <div class="slider-card-body p-md flex-col border">
+                <div class="basic-card-caption">
+                  <h4 class="h4">Андрей, 19 лет</h4>
+                </div>
+                <div class="time">
+                  <p class="sub-text">Стаж работы: 8 месяцев</p>
+                </div>
+                <div class="slide-card-content">
+                  <p class="plain-text">
+                    Профессионально сыграет с вами в видео-игры во время
+                    перерыва :)
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="slider-card w-sm" id="slide-6">
+              <div class="slider-card-img"></div>
+              <div class="slider-card-body p-md flex-col border">
+                <div class="basic-card-caption">
+                  <h4 class="h4">Савелий, 21 год</h4>
+                </div>
+                <div class="time">
+                  <p class="sub-text">Стаж работы: 1,5 года</p>
+                </div>
+                <div class="slide-card-content">
+                  <p class="plain-text">
+                    Мастер оригинальных коктейлей и лучше всех заваривает чай!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slider-buttons flex justify-center md-gap">
+          <div class="slider-btn border flex align-center" id="prev">
+            <a class="arrow left-arrow"></a>
+          </div>
+          <div class="slider-btn border flex align-center" id="next">
+            <a class="arrow right-arrow"></a>
+          </div>
+        </div>
+      </section>
+      <section class="menu-section container" id="menu">
+        <h2 class="h2">Наше меню</h2>
+        <div class="menu-tabs flex">
+          <a class="plain-text tab-button hvr-fade" id="0">Кальяны</a>
+          <a class="plain-text tab-button hvr-fade" id="1">Закуски</a>
+          <a class="plain-text tab-button hvr-fade" id="2"
+            >Чай и б/а коктейли</a
+          >
+          <a class="plain-text tab-button hvr-fade" id="3">Барная карта</a>
+        </div>
+        <div class="tabs-content">
+          <div class="tab-item tab-content-hookahs flex flex-gap wrap">
+            <div class="basic-card basic-card-rev p-md w-xl border flex">
+              <div class="basic-card-img img-container">
+                <img src="./dist/assets/img/cap-classic.png" alt="classic" />
+              </div>
+              <div class="basic-card-content flex-col">
+                <div class="basic-card-caption">
+                  <h3 class="h3">Классическая чаша</h3>
+                </div>
+                <div class="basic-card-body m-t">
+                  <p class="plain-text">Табак на выбор (в ассортименте)</p>
+                  <p class="plain-text m-t">
+                    Сессия на классической чаше рассчитана на компанию до 3
+                    гостей.
+                  </p>
+                </div>
+                <div class="basic-card-footer">
+                  <p class="title-text">750 руб.</p>
+                </div>
+              </div>
+            </div>
+            <div class="basic-card basic-card-rev p-md w-xl border flex">
+              <div class="basic-card-img img-container">
+                <img
+                  src="./dist/assets/img/hookah-fruit.png"
+                  alt="hookah fruit"
+                />
+              </div>
+              <div class="basic-card-content flex-col">
+                <div class="basic-card-caption">
+                  <h3 class="h3">Кальян на фрукте</h3>
+                </div>
+                <div class="basic-card-body m-t">
+                  <p class="plain-text">
+                    Фрукт на выбор: ананас, грейпфрут,гранат.
+                  </p>
+                  <p class="plain-text m-t">
+                    Максимальная длительность курения кальяна - 90 минут.
+                  </p>
+                </div>
+                <div class="basic-card-footer">
+                  <p class="title-text">1500 руб.</p>
+                </div>
+              </div>
+            </div>
+            <div class="basic-card basic-card-rev p-md w-xl border flex">
+              <div class="basic-card-img img-container">
+                <img
+                  src="./dist/assets/img/hookah-premium.png"
+                  alt="hookah premium"
+                />
+              </div>
+              <div class="basic-card-content flex-col">
+                <div class="basic-card-caption">
+                  <h3 class="h3">Премиум-кальян</h3>
+                </div>
+                <div class="basic-card-body m-t">
+                  <p class="plain-text">
+                    Используется кальян с подсветкой и премиальный табак.
+                  </p>
+                  <p class="plain-text m-t">
+                    Один перезабив табака и добавки в колбу бесплатно.
+                  </p>
+                </div>
+                <div class="basic-card-footer">
+                  <p class="title-text">2000 руб.</p>
+                </div>
+              </div>
+            </div>
+            <div class="p-md flex">
+              <div class="basic-card-content flex-col">
+                <div class="basic-card-caption">
+                  <h3 class="h3">Дополнительно</h3>
+                </div>
+                <div class="basic-card-body m-t">
+                  <p class="plain-text">Добавки в колбу на выбор:</p>
+                  <ul>
+                    <li class="plain-text">-молоко</li>
+                    <li class="plain-text">-сок</li>
+                    <li class="plain-text">-сиропы</li>
+                    <li class="plain-text">-ликер</li>
+                  </ul>
+                </div>
+                <div class="basic-card-footer">
+                  <p class="title-text">200 руб.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-item tab-content-dishes flex flex-gap wrap">
+            <div class="basic-card basic-card-rev p-md w-xl border flex">
+              <div class="basic-card-img img-container">
+                <img src="./dist/assets/img/dish1.jpg" alt="dish" />
+              </div>
+              <div class="basic-card-content flex-col">
+                <div class="basic-card-caption">
+                  <h3 class="h3">Закуска так себе</h3>
+                </div>
+                <div class="basic-card-body m-t">
+                  <p class="plain-text">На любителя.</p>
+                  <p class="plain-text m-t">Сойдет на перекус.</p>
+                </div>
+                <div class="basic-card-footer">
+                  <p class="title-text">400 руб.</p>
+                </div>
+              </div>
+            </div>
+            <div class="basic-card basic-card-rev p-md w-xl border flex">
+              <div class="basic-card-img img-container">
+                <img src="./dist/assets/img/dish2.jpg" alt="dish" />
+              </div>
+              <div class="basic-card-content flex-col">
+                <div class="basic-card-caption">
+                  <h3 class="h3">Закуска фри</h3>
+                </div>
+                <div class="basic-card-body m-t">
+                  <p class="plain-text">Дешево и сердито.</p>
+                  <p class="plain-text m-t">Отличный выбор под пиво.</p>
+                </div>
+                <div class="basic-card-footer">
+                  <p class="title-text">400 руб.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-item tab-content-cocktails flex flex-gap wrap">
+            <div class="basic-card basic-card-rev p-md w-xl border flex">
+              <div class="basic-card-img img-container">
+                <img src="./dist/assets/img/cocktail1.jpg" alt="dish" />
+              </div>
+              <div class="basic-card-content flex-col">
+                <div class="basic-card-caption">
+                  <h3 class="h3">Coca-cola пунш</h3>
+                </div>
+                <div class="basic-card-body m-t">
+                  <p class="plain-text">Чисто для дам.</p>
+                  <p class="plain-text m-t">Отличный выбор для начала.</p>
+                </div>
+                <div class="basic-card-footer">
+                  <p class="title-text">600 руб.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-item tab-content-menu flex flex-gap wrap">
+            <div class="basic-card basic-card-rev p-md w-xl border flex">
+              <div class="basic-card-img img-container">
+                <img src="./dist/assets/img/menu.jpg" alt="menu" />
+              </div>
+              <div class="basic-card-content flex-col">
+                <div class="basic-card-caption">
+                  <h3 class="h3">Базовое меню</h3>
+                </div>
+                <div class="basic-card-body m-t">
+                  <p class="plain-text">Полный набор.</p>
+                  <p class="plain-text m-t">Отличный выбор напиться в хлам.</p>
+                </div>
+                <div class="basic-card-footer">
+                  <p class="title-text">600 руб.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="actions-section container overflow-hidden" id="actions">
+        <div class="slide-right">
+          <h2 class="h2">Наши акции</h2>
+          <div class="about-description">
+            <p class="plain-text">
+              Все акции действительны с 1.12.2020 до 31.12.2020. Подробности
+              уточняйте по телефону или у официанта.
+            </p>
+          </div>
+        </div>
+        <div class="action-gallery flex space-between">
+          <figure class="w-sm">
+            <img src="./dist/assets/img/action1.png" alt="action" />
+            <figcaption class="plain-text m-t">
+              Скидка 25% на любой кальян с понедельника по четверг.
+            </figcaption>
+          </figure>
+          <figure class="w-sm">
+            <img src="./dist/assets/img/action2.png" alt="action" />
+            <figcaption class="plain-text m-t">
+              При покупке любого премиум кальяна 1 л чая в подарок!
+            </figcaption>
+          </figure>
+          <figure class="w-sm">
+            <img src="./dist/assets/img/action3.png" alt="action" />
+            <figcaption class="plain-text m-t">
+              Отметьте нас в Instagram @smoke_city и получите скидку 10% на
+              действующий заказ.
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+      <section class="gallery-section container" id="gallery">
+        <h2 class="h2">Посмотрите нашу обстановку внутри</h2>
+        <div class="our-gallery p-tb flex wrap flex-gap">
+          <div class="img-container img-zoom shadow-drop-2-center">
+            <img src="./dist/assets/img/pic1.png" alt="pic" />
+          </div>
+          <div class="img-container img-zoom shadow-drop-2-center">
+            <img src="./dist/assets/img/pic2.png" alt="pic" />
+          </div>
+          <div class="img-container img-zoom shadow-drop-2-center">
+            <img src="./dist/assets/img/pic3.png" alt="pic" />
+          </div>
+          <div class="img-container img-zoom shadow-drop-2-center">
+            <img src="./dist/assets/img/pic4.png" alt="pic" />
+          </div>
+        </div>
+      </section>
+      <section class="book-a-table-section container" id="book">
+        <div class="form-wrapper flex align-center">
+          <form
+            class="form p-md flex align-center"
+            id="form"
+            novalidate
+            method="post"
+          >
+            <div class="form-body flex-col align-items-center">
+              <div class="form-header">
+                <h3 class="h3-base">
+                  Забронируйте столик или VIP-комнату прямо сейчас!
+                </h3>
+              </div>
+              <div class="form-main">
+                <div class="control form-group">
+                  <input
+                    type="text"
+                    class="input border form-control"
+                    name="name"
+                    id="name"
+                    placeholder="Ваше имя"
+                    required
+                  />
+                </div>
+                <div class="control form-group">
+                  <input
+                    type="text"
+                    class="input border form-control"
+                    name="phone"
+                    id="phone"
+                    placeholder="Ваш телефон"
+                    required
+                  />
+                </div>
+                <div class="control form-group">
+                  <button
+                    type="submit"
+                    class="btn btn-frm hvr-shutter-in-vertical"
+                  >
+                    Забронировать
+                  </button>
+                  <p class="text-help d-none">Заказ отклонен</p>
+                </div>
+              </div>
+              <div class="form-thanks d-none">
+                <canvas width="350" height="200"></canvas>
+                <h5 id="h5">Приятной обкурки!</h5>
+              </div>
+              <div class="form-footer control">
+                <p class="sub-text-sm">
+                  В течении 15 минут наш администратор свяжется с вами, чтобы
+                  подтвердить бронь стола или комнаты.
+                </p>
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+      <section class="whereabouts container" id="contacts">
+        <h2 class="h2 m-bm">Где мы находимся?</h2>
+        <div class="flex flex-gap align-items-center">
+          <iframe
+            class="border-radius"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2029.042969037997!2d24.741058076819222!3d59.43235790276989!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4692949e9b212c73%3A0x253a21c1e9703772!2sHookah%20Palace!5e0!3m2!1sen!2see!4v1747605441941!5m2!1sen!2see"
+            width="635"
+            height="358"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          >
+          </iframe>
+          <div class="contacts-board flex-col ml-gap">
+            <div class="content">
+              <h3 class="h3">Наш адрес</h3>
+              <p class="plain-text m-t">Москва, ул. Верхняя Радищевская,</p>
+              <p class="plain-text">5 (м. Таганская, кольцевая)</p>
+            </div>
+            <div class="content">
+              <h3 class="h3">Время работы</h3>
+              <p class="plain-text m-t">Пн-Чт с 18:00 до 00:00</p>
+              <p class="plain-text">Пт-Сб с 20:00 до 5:00</p>
+              <p class="plain-text m-t">Вход 18+ и строго</p>
+              <p class="plain-text">по предьявлению паспорта.</p>
+            </div>
+            <div class="content">
+              <h3 class="h3">Следите за нами в соц.сетях</h3>
+              <ul class="social-list m-t flex sm-gap">
+                <li class="social-list__item">
+                  <a href="#">
+                    <i class="fa-brands fa-thin fa-instagram fa-2xl"></i>
+                  </a>
+                </li>
+                <li class="social-list__item">
+                  <a href="#">
+                    <i class="fa-brands fa-thin fa-vk fa-2xl"></i>
+                  </a>
+                </li>
+                <li class="social-list__item">
+                  <a href="#">
+                    <i class="fa-brands fa-thin fa-whatsapp fa-2xl"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-header flex align-space-between">
+          <!--   Logo  -->
+          <div class="logo flex">
+            <a href="#" class="flex">
+              <img src="./dist/assets/img/hookah.png" alt="hookah logo" />
+            </a>
+            <div class="logo-content">
+              <div class="logo-title h4">Smoke City</div>
+              <p class="logo-name">hookah bar</p>
+            </div>
+          </div>
+          <!--  Footer info -->
+          <div class="footer-info flex">
+            <a href="#form" class="btn hvr-shutter-in-vertical"
+              >Забронировать стол</a
+            >
+            <div class="info-card">
+              <div class="info-card__img flex">
+                <img src="./dist/assets/img/phone-call.png" alt="" />
+              </div>
+              <div class="info-card__content">
+                <p class="info-text color-blue">8 900-500-10-10</p>
+                <p class="info-text color-light">Звоните нам</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="copyrights">Все права защищены, 2020</p>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,168 @@
+@font-face {
+  font-family: 'PantonExtraBold';
+  src: url("../assets/fonts/Panton-ExtraBold.woff");
+}
+@font-face {
+  font-family: 'MontserratExtraLight';
+  src: url("../assets/fonts/Montserrat-ExtraLight.ttf");
+}
+@font-face {
+  font-family: 'MontserratRegular';
+  src: url("../assets/fonts/Montserrat-Regular.ttf");
+}
+@font-face {
+  font-family: 'MontserratMedium';
+  src: url("../assets/fonts/Montserrat-Medium.ttf");
+}
+@max-w-xl: 524px;
+@max-w-lg: 510px;
+@max-w-sm: 350px;
+@padding-base: 30px;
+@padding-extra: 40px;
+@margin-base: 1lh;
+@margin-bottom: 60px;
+@border-radius: 10px;
+@color-bg-main: #070015;
+@color-title: #6224DFFF;
+@color-plain-text: #fff;
+@color-light-text: #fefefe;
+@color-copyright: #939393;
+@color-form-subtext: #8f8f8f;
+@color-card-subtext: #949494;
+@color-outline: @color-title;
+@color-bg-btn: @color-title;
+@color-danger: #dc1d34;
+@font-size-base: 15px;
+@font-size-small: 13px;
+@font-size-medium: 14px;
+@font-size-icons: 26px;
+@font-size-h1: 36px;
+@font-size-h2: 30px;
+@font-size-h3: 20px;
+@font-size-h4: 18px;
+@font-size-h5: 16px;
+@font-family-base: 'MontserratRegular';
+@font-family-light: 'MontserratExtraLight';
+@font-family-title: 'PantonExtraBold';
+@font-family-btn: 'MontserratMedium';
+
+.color-blue {
+  color: @color-title;
+}
+.color-light {
+  color: @color-light-text;
+}
+.font-color {
+  font-family: @font-family-title, sans-serif;
+  line-height: 1.4;
+  text-wrap: balance;
+}
+.h1 {
+  font-size: @font-size-h1;
+  .font-color();
+}
+.h2 {
+  font-size: @font-size-h2;
+  .font-color();
+}
+.font-color-2 {
+  font-family: @font-family-title, sans-serif;
+  color: @color-title;
+  line-height: 1;
+  text-wrap: balance;
+}
+.h3 {
+  font-size: @font-size-h3;
+  .font-color-2();
+}
+.h3-base {
+  font-size: @font-size-h3;
+  font-family: @font-family-title, sans-serif;
+  color: @color-plain-text;
+  line-height: 1;
+  text-align: center;
+}
+.h4 {
+  font-size: @font-size-h4;
+  .font-color-2();
+}
+.plain-text {
+  color: @color-plain-text;
+  font-family: @font-family-base;
+  font-size: @font-size-base;
+  line-height: 1.3;
+  //text-wrap: balance;
+}
+.title-text {
+  font-size: @font-size-h3;
+  font-family: @font-family-title;
+  line-height: 1;
+}
+.extra-text {
+  color: @color-plain-text;
+  font-family: @font-family-title;
+  line-height: 1.3;
+  font-size: @font-size-medium;
+}
+.sub-text {
+  font-family: @font-family-base;
+  font-size: @font-size-base;
+  line-height: 1.3;
+  color: @color-card-subtext;
+}
+.sub-text-sm {
+  font-family: @font-family-base;
+  font-size: 11px;
+  line-height: 1.3;
+  color: @color-card-subtext;
+}
+.w-xl {
+  width: @max-w-xl;
+}
+.w-lg {
+  width: @max-w-lg;
+}
+.w-sm {
+  max-width: @max-w-sm;
+}
+.p-md {
+  padding: @padding-base;
+}
+.p-tb {
+  padding: @padding-extra 0 @padding-extra 0;
+}
+.m-t {
+  margin-top: @margin-base;
+}
+.m-b {
+  margin-bottom: @margin-base;
+}
+.m-bm {
+  margin-bottom: @margin-bottom;
+}
+.border {
+  border: 1px solid @color-outline;
+}
+.border-radius {
+  border-radius: @border-radius;
+}
+.fa-font-size {
+  font-size: @font-size-icons;
+}
+.pristine-error {
+  display: table;
+}
+.has-success .form-control {
+  border: 2px solid #168b3f;
+}
+
+.has-danger .form-control {
+  border: 2px solid @color-danger;
+}
+
+.form-group .text-help {
+  color: @color-danger;
+  font-family: @font-family-base;
+  font-size: @font-size-base;
+  line-height: 1.3;
+}
