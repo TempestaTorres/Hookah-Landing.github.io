@@ -21,7 +21,7 @@ function validateForm(form) {
                 method: "POST",
                 url: "https://testologia.ru/checkout",
                 data: {
-                    'name': data[0],
+                    'name': 'itlogia',
                     'phone': data[1]
                 },
                 dataType: 'json',
